@@ -12,6 +12,7 @@ import Analytics from './pages/Analytics';
 import Settings from './pages/Settings';
 import Landing from './pages/Landing';
 import { ModelProvider } from './components/ModelProvider';
+import Profile from './pages/Profile';
 
 function App() {
   const { setUser, setLoading } = useStore();
@@ -71,6 +72,11 @@ function App() {
           <Route path="/settings" element={
             <ProtectedRoute>
               <Layout><Settings /></Layout>
+            </ProtectedRoute>
+          } />
+          <Route path="/profile" element={
+            <ProtectedRoute>
+              <Layout><Profile /></Layout>
             </ProtectedRoute>
           } />
         </Routes>

@@ -5,6 +5,9 @@ export interface AppUser {
   id: string;
   email: string;
   name?: string;
+  picture?: string;
+  provider?: string;
+  verified?: boolean;
 }
 
 interface AppState {
